@@ -1,0 +1,25 @@
+{
+ "palettes": [
+  "blush-sage-slate"
+ ],
+ "types": [
+  "source-serif"
+ ],
+ "dealt": [
+  "zilla",
+  "host",
+  "source-serif"
+ ],
+ "moments": [
+  {
+   "id": "photo-chapters",
+   "at": "2026-11-12T15:37:12.214Z",
+   "seed": "195764ca"
+  },
+  {
+   "id": "word-highlight",
+   "at": "2026-11-12T15:37:12.214Z",
+   "seed": "195764ca"
+  }
+ ]
+}

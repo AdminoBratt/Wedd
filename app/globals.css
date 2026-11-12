@@ -1,0 +1,29 @@
+/* Inlined into <head> by app/layout.tsx right after the kit stylesheets from public/assets (system.css, cards.css,
+   motion.css, backgrounds.css, layout.css, icon.css, in that order). This file holds the dealt :root
+   block exactly as `start.mjs css --page service --palette blush-sage-slate --type source-serif` printed
+   it, then the page CSS the skill allows (inside visuals only). */
+:root {
+  --p-bg: #a6b3bc; --p-surface: #b2bdc5; --p-ink: #1c1c1c; --p-muted: #38424a;
+  --p-accent: #2c3620; --p-accent-ink: #e3e2da; --p-action: #2c3620; --p-action-ink: #e3e2da;
+  --p-inv-bg: #2c3620; --p-inv-surface: #39422d; --p-inv-ink: #ffffff; --p-inv-muted: #a8ada3;
+  --p-inv-accent: #ffffff; --p-inv-accent-ink: #2c3620; --p-inv-action: #ffffff; --p-inv-action-ink: #2c3620;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-text: "Libre Franklin", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
+
+/* page CSS, tablet only (640 to 1023, layout-v4.md section 2): keep each section on its screens there.
+   The portfolio keeps its three photographs across, the two service tiles turn portrait so they fill
+   their screen, and the about photograph is shorter so the stacked split fits one screen. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  #portfolio .grid > .tile { grid-column: auto / span 4; }
+  #tjanster .tile { --tile-ratio: 4 / 5; }
+  #om .frame { --ratio: 50%; }
+}
+
+/* page CSS, phone only: the portfolio photographs square, so its two groups fit its two phone screens */
+@media (max-width: 639px) {
+  #portfolio .tile { --tile-ratio: 1 / 1; }
+}

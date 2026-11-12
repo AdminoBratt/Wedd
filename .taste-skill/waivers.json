@@ -1,0 +1,12 @@
+[
+ {
+  "check": "copy-fact",
+  "target": "h1#hero-h \"Bröllop och event i Stockholm\"",
+  "reason": "The h1 names the place from the brief, Stockholm, after the Swedish preposition \"i\"; the checker only reads English prepositions (in, at, near) before a place name."
+ },
+ {
+  "check": "no-visual",
+  "target": "section#fragor \"Vanliga frågor\"",
+  "reason": "sections.md section 1 allows one section without a picture for an FAQ; a photograph in its left column breaks the right-line rule (one-sided) and on its right side the section outgrows its screen. Its neighbours, Om oss and the close, both carry photographs."
+ }
+]

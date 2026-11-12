@@ -1,0 +1,48 @@
+# --- dependencies and build output ---
+node_modules/
+.next/
+out/
+shots/
+next-env.d.ts
+*.tsbuildinfo
+
+# --- secrets: never commit keys, tokens or credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.npmrc
+.yarnrc.yml
+credentials*.json
+secrets*.json
+*.secret
+
+# --- Claude Code: local settings, sessions and account data stay on this machine ---
+.claude/
+.claude.json
+CLAUDE.local.md
+.mcp.json
+
+# --- design skill: local machine state ---
+# headless Chrome profiles (cookies and browser state)
+.taste-skill/chrome-*/
+# gate runs: session ids, local paths, screenshot crops
+.taste-skill/gate.json
+.taste-skill/gate-blocks.json
+.taste-skill/build*.json
+.taste-skill/gate/
+.taste-skill/gate-hook-missing.txt
+.taste-skill/found.round*.json
+
+# --- OS and editor clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
