@@ -3,11 +3,6 @@
     "label": "Bröllop",
     "photos": [
       {
-        "position": "",
-        "image": "/uploads/images.jpg",
-        "alt": "hehehe"
-      },
-      {
         "image": "/photos/photo-f61711941.jpg",
         "alt": "Två vigselringar i en hand mot en vit klänning"
       },
@@ -18,6 +13,11 @@
       {
         "image": "/photos/photo-f201908224-500.jpg",
         "alt": "Ett långbord med ljus, blommor och rosa tyg i en restaurang"
+      },
+      {
+        "position": "",
+        "image": "/uploads/images.jpg",
+        "alt": "hehehe"
       },
       {
         "image": "/photos/photo-f61711770.jpg",
