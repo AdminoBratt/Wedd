@@ -45,10 +45,10 @@ export const photos = {
 };
 
 export const site = {
-  name: 'Sigge Brat Event',
+  name: 'Sigge Bratt Event',
   city: 'Stockholm',
   lang: 'sv',
-  title: 'Sigge Brat Event: bröllop och företagsevent i Stockholm',
+  title: 'Sigge Bratt Event: bröllop och företagsevent i Stockholm',
   description:
     'Eventplanerare som planerar hela bröllop och företagsevent i Stockholmsområdet, i alla budgetnivåer. Ring eller mejla för ett första samtal.',
   ogDescription: 'Hela planeringen av bröllop och företagsevent, bara i Stockholmsområdet.',
@@ -58,7 +58,7 @@ export const site = {
   // and the email is on .example. The email address is never printed on the page.
   phoneDisplay: '08-000 00 00',
   phoneHref: 'tel:+46800000000',
-  emailHref: 'mailto:hej@siggebratevent.example',
+  emailHref: 'mailto:hej@siggebrattevent.example',
 
   actions: {
     call: 'Ring oss',
@@ -145,9 +145,9 @@ export const site = {
   },
 
   about: {
-    h2: 'Om Sigge Brat Event',
+    h2: 'Om Sigge Bratt Event',
     story:
-      'Sigge Brat Event planerar bröllop och företagsevent i Stockholm. Vi arbetar bara här, eftersom vi vill känna lokalerna, leverantörerna och vägarna mellan dem innan vi lovar något.',
+      'Sigge Bratt Event planerar bröllop och företagsevent i Stockholm. Vi arbetar bara här, eftersom vi vill känna lokalerna, leverantörerna och vägarna mellan dem innan vi lovar något.',
     values: [
       { name: 'Alla budgetnivåer', text: 'Vi säger vad budgeten räcker till, också när svaret är mindre än ni hoppats.' },
       { name: 'Bara Stockholm', text: 'Inga destinationsbröllop. Vi arbetar där vi känner lokalerna och leverantörerna.' },
