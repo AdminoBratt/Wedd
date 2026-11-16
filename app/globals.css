@@ -27,3 +27,9 @@
 @media (max-width: 639px) {
   #portfolio .tile { --tile-ratio: 1 / 1; }
 }
+
+/* page CSS: the "Se alla bilder" dialog (content/gallery.json), full screen on the page's base ground */
+.gallery-dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: var(--s-8) 0; border: 0; overflow-y: auto; }
+.gallery-dialog::backdrop { background: rgb(0 0 0 / 0.5); }
+.gallery-dialog__head { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+.gallery-dialog__head h2 { margin: 0; }
