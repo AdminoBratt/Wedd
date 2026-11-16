@@ -3,6 +3,11 @@
     "label": "Bröllop",
     "photos": [
       {
+        "position": "",
+        "image": "/uploads/images.jpg",
+        "alt": "hehehe"
+      },
+      {
         "image": "/photos/photo-f61711941.jpg",
         "alt": "Två vigselringar i en hand mot en vit klänning"
       },
@@ -22,11 +27,6 @@
       {
         "image": "/photos/photo-f61708616.jpg",
         "alt": "Brudparets skor på ett trägolv, bruna skor bredvid vita klackskor"
-      },
-      {
-        "position": "",
-        "image": "/uploads/images.jpg",
-        "alt": "hehehe"
       }
     ]
   },
