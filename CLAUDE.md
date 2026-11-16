@@ -18,7 +18,7 @@ npm run gallery      # resolve content/gallery.json (runs on its own before dev 
 
 ## Photo admin
 - The portfolio photographs are managed at `/admin` (Decap CMS, `public/admin/config.yml`), signed in with GitHub; it is not linked from the site. Saving commits `content/gallery.json` and uploads to `public/uploads/` on `main`, and the host rebuilds (`netlify.toml`).
-- The first three photos of each group show in the portfolio section; all of them, in the admin's order, open under "Se alla bilder".
+- The first three photos of each group show in the portfolio section; all of a group, in the admin's order, open under its own "Se alla" button.
 - `scripts/gallery.mjs` writes `content/gallery.generated.json` (sizes, srcset) and resizes uploads into `public/uploads/sizes/`; both are gitignored.
 - Local editing without GitHub: `npx decap-server` plus `npm run dev`, then http://localhost:3000/admin/.
 

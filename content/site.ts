@@ -133,8 +133,11 @@ export const site = {
   // the photographs themselves are managed at /admin (content/gallery.json)
   portfolio: {
     h2: 'Bilder från bröllop och företagsevent',
-    showAll: 'Se alla bilder',
-    dialogTitle: 'Alla bilder från bröllop och företagsevent',
+    // one "Se alla" button and dialog per group, each in the admin's order
+    all: {
+      wedding: { button: 'Se alla bröllopsbilder', title: 'Alla bilder från bröllop' },
+      corporate: { button: 'Se alla eventbilder', title: 'Alla bilder från företagsevent' },
+    },
     close: 'Stäng',
   },
 
