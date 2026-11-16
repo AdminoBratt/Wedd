@@ -46,3 +46,6 @@ desktop.ini
 .vscode/
 .idea/
 *.log
+
+# --- graphify: local knowledge graph, rebuilt on demand ---
+graphify-out/

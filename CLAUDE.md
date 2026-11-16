@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Landing page for a wedding and corporate event planner in Stockholm (placeholder name *Saga Ström Event*). **`BRIEF.md` is the source of truth** for business, audience, tone, sections and CTA. Read it before any work.
+Landing page for a wedding and corporate event planner in Stockholm (placeholder name *Sigge Bratt Event*). **`BRIEF.md` is the source of truth** for business, audience, tone, sections and CTA. Read it before any work.
 
 ## Stack
 - **Next.js (App Router) + React + TypeScript**, built as a **static export** (`output: 'export'` in `next.config.mjs`). No server features, API routes or `next/image` optimization (use `images: { unoptimized: true }`).

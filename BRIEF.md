@@ -1,7 +1,7 @@
 # Landing Page Brief: Wedding & Corporate Event Planner
 
 ## Business
-- **Name:** *Sigge Brat Event* (placeholder; swap for the real name)
+- **Name:** *Sigge Bratt Event* (placeholder; swap for the real name)
 - **Location:** Stockholm (placeholder). **Local clients only**: no destination events.
 - **Focus:** Two lines, **weddings** and **corporate events**.
 
