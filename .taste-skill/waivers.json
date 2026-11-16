@@ -6,7 +6,7 @@
  },
  {
   "check": "no-visual",
-  "target": "section#fragor \"Vanliga frågor\"",
+  "target": "section#fragor",
   "reason": "sections.md section 1 allows one section without a picture for an FAQ; a photograph in its left column breaks the right-line rule (one-sided) and on its right side the section outgrows its screen. Its neighbours, Om oss and the close, both carry photographs."
  }
 ]

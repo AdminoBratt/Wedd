@@ -139,8 +139,8 @@ export const site = {
   portfolio: {
     h2: 'Bilder från bröllop och företagsevent',
     groups: [
-      { label: 'Bröllop', line: 'Vigslar, middagar och fester, stora som små.', photos: ['workRings', 'workHands', 'workTable'] as const },
-      { label: 'Företagsevent', line: 'Konferenser, galor och kundkvällar för små och stora företag.', photos: ['workStage', 'workConference', 'workGlasses'] as const },
+      { label: 'Bröllop', photos: ['workRings', 'workHands', 'workTable'] as const },
+      { label: 'Företagsevent i Stockholm', photos: ['workStage', 'workConference', 'workGlasses'] as const },
     ],
   },
 
@@ -156,16 +156,16 @@ export const site = {
   },
 
   faq: {
-    h2: 'Vanliga frågor',
+    h2: 'Frågor om bröllop och företagsevent',
     lead: 'Hittar ni inte svaret här, fråga oss direkt.',
     linkLabel: 'Mejla en fråga',
     items: [
       {
-        q: 'Hur långt i förväg ska vi höra av oss?',
+        q: 'Hur långt före bröllopet eller eventet ska vi höra av oss?',
         a: 'Så tidigt ni kan. Populära lokaler i Stockholm bokas ofta långt fram, särskilt lördagar på sommaren. Ring, så säger vi vad som går att få för ert datum.',
       },
       {
-        q: 'Tar ni uppdrag med liten budget?',
+        q: 'Planerar ni bröllop och event med liten budget?',
         a: 'Ja. Vi planerar i alla budgetnivåer och säger direkt vad budgeten räcker till. Priset får ni i en skriftlig offert efter första samtalet.',
       },
       {
@@ -173,7 +173,7 @@ export const site = {
         a: 'Allt från första mötet till dagen: lokal, leverantörer, budget, tidsplan och ledning på plats. Offerten visar vad som ingår för just er.',
       },
       {
-        q: 'Använder ni egna leverantörer?',
+        q: 'Använder ni egna leverantörer i Stockholm?',
         a: 'Vi föreslår leverantörer i Stockholm som passar budgeten och tar gärna in dem ni redan vill ha. Kontakten med alla sköter vi.',
       },
       {
