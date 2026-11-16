@@ -15,7 +15,9 @@ export type GalleryPhoto = {
 export type GalleryGroup = { label: string; photos: GalleryPhoto[] };
 
 export const gallery = data as Record<'wedding' | 'corporate', GalleryGroup>;
-export const galleryGroups: GalleryGroup[] = [gallery.wedding, gallery.corporate];
+export type GroupKey = keyof typeof gallery;
+/** the portfolio's groups in page order */
+export const groupKeys: GroupKey[] = ['wedding', 'corporate'];
 /** how many of each group's photographs the portfolio section shows; the rest open under "Se alla bilder" */
 export const shownPerGroup = 3;
 

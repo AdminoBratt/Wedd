@@ -35,7 +35,7 @@ collections:
               - { name: label, label: Rubrik, widget: string }
               - name: photos
                 label: Bilder
-                hint: De tre första visas på sidan, alla visas under ”Se alla bilder”. Dra i ═ för att ändra ordning.
+                hint: De tre första visas på sidan, alla visas under gruppens ”Se alla”-knapp. Dra i ═ för att ändra ordning.
                 label_singular: bild
                 widget: list
                 summary: "{{fields.alt}}"
@@ -63,7 +63,7 @@ collections:
               - { name: label, label: Rubrik, widget: string }
               - name: photos
                 label: Bilder
-                hint: De tre första visas på sidan, alla visas under ”Se alla bilder”. Dra i ═ för att ändra ordning.
+                hint: De tre första visas på sidan, alla visas under gruppens ”Se alla”-knapp. Dra i ═ för att ändra ordning.
                 label_singular: bild
                 widget: list
                 summary: "{{fields.alt}}"
