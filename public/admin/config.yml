@@ -1,0 +1,85 @@
+# Decap CMS: the admin page at /admin. Only the portfolio photographs are editable here.
+# Sign-in is GitHub; only accounts with write access to the repository get in. Netlify supplies the
+# GitHub sign-in (Site configuration > Access & security > OAuth > Install provider > GitHub).
+backend:
+  name: github
+  repo: AdminoBratt/Wedd
+  branch: main
+  commit_messages:
+    update: "Bildadmin: uppdatera {{slug}}"
+    uploadMedia: "Bildadmin: ladda upp {{path}}"
+    deleteMedia: "Bildadmin: ta bort {{path}}"
+
+# `npx decap-server` in the project, then http://localhost:3000/admin/ edits the local files instead
+local_backend: true
+
+locale: sv
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: gallery
+    label: Bilder
+    editor: { preview: false }
+    files:
+      - name: gallery
+        label: Bilder från bröllop och företagsevent
+        file: content/gallery.json
+        format: json
+        fields:
+          - name: wedding
+            label: Bröllop
+            widget: object
+            collapsed: false
+            fields:
+              - { name: label, label: Rubrik, widget: string }
+              - name: photos
+                label: Bilder
+                hint: De tre första visas på sidan, alla visas under ”Se alla bilder”. Dra i ═ för att ändra ordning.
+                label_singular: bild
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - { name: image, label: Bild, widget: image, choose_url: false }
+                  - name: alt
+                    label: Beskrivning för skärmläsare (vad syns på bilden?)
+                    widget: string
+                  - name: position
+                    label: Beskärning
+                    widget: select
+                    required: false
+                    default: ""
+                    options:
+                      - { label: Mitten, value: "" }
+                      - { label: Överkant, value: "50% 20%" }
+                      - { label: Nederkant, value: "50% 80%" }
+                      - { label: Vänster, value: "25% 50%" }
+                      - { label: Höger, value: "75% 50%" }
+          - name: corporate
+            label: Företagsevent
+            widget: object
+            collapsed: false
+            fields:
+              - { name: label, label: Rubrik, widget: string }
+              - name: photos
+                label: Bilder
+                hint: De tre första visas på sidan, alla visas under ”Se alla bilder”. Dra i ═ för att ändra ordning.
+                label_singular: bild
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - { name: image, label: Bild, widget: image, choose_url: false }
+                  - name: alt
+                    label: Beskrivning för skärmläsare (vad syns på bilden?)
+                    widget: string
+                  - name: position
+                    label: Beskärning
+                    widget: select
+                    required: false
+                    default: ""
+                    options:
+                      - { label: Mitten, value: "" }
+                      - { label: Överkant, value: "50% 20%" }
+                      - { label: Nederkant, value: "50% 80%" }
+                      - { label: Vänster, value: "25% 50%" }
+                      - { label: Höger, value: "75% 50%" }

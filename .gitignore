@@ -49,3 +49,7 @@ desktop.ini
 
 # --- graphify: local knowledge graph, rebuilt on demand ---
 graphify-out/
+
+# --- gallery: generated from content/gallery.json before every dev and build run ---
+content/gallery.generated.json
+public/uploads/sizes/

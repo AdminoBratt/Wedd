@@ -1,0 +1,22 @@
+{
+  "wedding": {
+    "label": "Bröllop",
+    "photos": [
+      { "image": "/photos/photo-f61711941.jpg", "alt": "Två vigselringar i en hand mot en vit klänning" },
+      { "image": "/photos/photo-f194443110.jpg", "alt": "Ett par håller hand vid ett dukat bord under middagen" },
+      { "image": "/photos/photo-f201908224-500.jpg", "alt": "Ett långbord med ljus, blommor och rosa tyg i en restaurang" },
+      { "image": "/photos/photo-f61711770.jpg", "alt": "En brud i spetsklänning håller en bukett med rosa och vita rosor", "position": "50% 40%" },
+      { "image": "/photos/photo-f61708616.jpg", "alt": "Brudparets skor på ett trägolv, bruna skor bredvid vita klackskor" }
+    ]
+  },
+  "corporate": {
+    "label": "Företagsevent i Stockholm",
+    "photos": [
+      { "image": "/photos/photo-f84999500.jpg", "alt": "En stor scen med skärmar och publik framför, under en konferens" },
+      { "image": "/photos/photo-f126871360.jpg", "alt": "Ett mötesrum dukat för ett långbord med stolar och en duk framme, innan deltagarna kommer" },
+      { "image": "/photos/photo-f95147280.jpg", "alt": "Två champagneglas mot en mörk bakgrund" },
+      { "image": "/photos/photo-f33307605-960.jpg", "alt": "En galamiddag med dukade runda bord under en kupol med kristallkronor" },
+      { "image": "/photos/photo-f38690209-960.jpg", "alt": "En konferenssal med publik på rader under kristallkronor" }
+    ]
+  }
+}

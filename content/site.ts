@@ -33,12 +33,6 @@ export const photos = {
   stepProposal: p('f181144114', [500, 960], 960, 722, 'Ett dukat bord med blommigt porslin, glas och en bukett vita blommor'),
   stepPlanning: p('f38690209', [500, 960], 960, 640, 'En konferenssal med publik på rader under kristallkronor'),
   stepDay: p('f61708616', [500, 960, 1280], 1280, 853, 'Brudparets skor på ett trägolv, bruna skor bredvid vita klackskor'),
-  workRings: p('f61711941', [500, 960, 1280], 1280, 853, 'Två vigselringar i en hand mot en vit klänning'),
-  workHands: p('f194443110', [500, 960, 1280], 1280, 908, 'Ett par håller hand vid ett dukat bord under middagen'),
-  workTable: p('f201908224', [500], 500, 746, 'Ett långbord med ljus, blommor och rosa tyg i en restaurang'),
-  workStage: p('f84999500', [500, 960, 1280], 1280, 853, 'En stor scen med skärmar och publik framför, under en konferens'),
-  workConference: p('f126871360', [500, 960, 1280], 1280, 590, 'Ett mötesrum dukat för ett långbord med stolar och en duk framme, innan deltagarna kommer'),
-  workGlasses: p('f95147280', [500, 960, 1280], 1280, 853, 'Två champagneglas mot en mörk bakgrund'),
   stepCall: p('f117883894', [500, 960, 1280], 1280, 853, 'En hand skriver med penna i en anteckningsbok'),
   about: p('f108169023', [500, 960, 1280], 1280, 848, 'Ett bordsarrangemang med vita blommor och vinglas på ett dukat bord'),
   close: p('f28183529', [500, 960, 1280], 1280, 853, 'En dukad festlokal med runda bord och fönster mot vattnet'),
@@ -136,12 +130,12 @@ export const site = {
       '. Ett litet bröllop i stadshuset och en gala för hela företaget får samma planering. Budgeten avgör vad vi bokar, aldrig hur noga vi är.',
   },
 
+  // the photographs themselves are managed at /admin (content/gallery.json)
   portfolio: {
     h2: 'Bilder från bröllop och företagsevent',
-    groups: [
-      { label: 'Bröllop', photos: ['workRings', 'workHands', 'workTable'] as const },
-      { label: 'Företagsevent i Stockholm', photos: ['workStage', 'workConference', 'workGlasses'] as const },
-    ],
+    showAll: 'Se alla bilder',
+    dialogTitle: 'Alla bilder från bröllop och företagsevent',
+    close: 'Stäng',
   },
 
   about: {

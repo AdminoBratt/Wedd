@@ -1,20 +1,21 @@
 import { site } from '../../content/site';
-import Img from '../Img';
+import { coverSizes, galleryGroups, shownPerGroup } from '../../content/gallery';
+import GalleryImg from '../GalleryImg';
+import GalleryDialog from '../GalleryDialog';
 
 // Portfolio on the dealt dark band: two screens as two groups (.g2), weddings, then corporate events.
-// Each group: its h3 (the tile title style, so the h3 level keeps one size), then three 4:5 photographs.
-// sizes per tile, so each cover crop gets a file sharp enough (photo-upscale: at most 1.33x) and no
-// larger than it needs (perf.mjs: at most 2.2x the shown width). On a phone the first two tiles are
-// two-up at 165px and the third runs the full 342px; the 2.17:1 meeting room needs more for its 4:5 crop.
-const tileSizes = (k: string, n: number) =>
-  `(max-width: 639px) ${n === 2 ? '120vw' : '70vw'}, ${k === 'workConference' ? '60vw' : '45vw'}`;
+// Each group: its h3 (the tile title style, so the h3 level keeps one size), then the first three of
+// the admin's photographs (content/gallery.json, edited at /admin) as 4:5 tiles. "Se alla bilder"
+// opens the rest in the admin's order. On a phone the first two tiles are two-up and the third runs
+// the full width. Tiles are square on a phone, 4:5 above (globals.css); sizes follow each crop.
 
 export default function Portfolio() {
   const s = site.portfolio;
+  const more = galleryGroups.some((g) => g.photos.length > shownPerGroup);
   return (
     <section className="section g2 ground-inverse" id="portfolio" aria-labelledby="portfolio-h">
       <div className="wrap">
-        {s.groups.map((g, i) => (
+        {galleryGroups.map((g, i) => (
           <div className="group stack-4" key={g.label}>
             {i === 0 && (
               <div className="section-head">
@@ -23,14 +24,17 @@ export default function Portfolio() {
             )}
             <div className="tile__head"><h3>{g.label}</h3></div>
             <div className="grid">
-              {g.photos.map((k, n) => (
-                <div className="tile tile--portrait span-4" key={k}>
+              {g.photos.slice(0, shownPerGroup).map((ph, n) => (
+                <div className="tile tile--portrait span-4" key={ph.src}>
                   <div className="tile__media">
-                    <Img k={k} sizes={tileSizes(k, n)} />
+                    <GalleryImg ph={ph} sizes={coverSizes(ph, { vw: n === 2 ? 92 : 45, tile: 1 }, { vw: 30, tile: 0.8 })} />
                   </div>
                 </div>
               ))}
             </div>
+            {more && i === galleryGroups.length - 1 && (
+              <GalleryDialog groups={galleryGroups} label={s.showAll} title={s.dialogTitle} close={s.close} />
+            )}
           </div>
         ))}
       </div>

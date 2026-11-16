@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "gallery": "node scripts/gallery.mjs",
+    "predev": "node scripts/gallery.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/gallery.mjs",
     "build": "next build",
     "shots": "node scripts/screenshot.mjs"
   },
@@ -20,6 +23,7 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
     "typescript": "^6.0.3"
   }
 }
